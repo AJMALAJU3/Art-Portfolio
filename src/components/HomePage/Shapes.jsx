@@ -3,7 +3,7 @@ import cone from '../../assets/cone.png';
 import torus from '../../assets/torus.png';
 import sphere from '../../assets/sphere.png';
 import hedron from '../../assets/hedron.png';
-import './shapes.css'
+import "./ShapesStyle.css";
 
 
 function Shapes() {
@@ -25,17 +25,17 @@ function Shapes() {
       <img
         src={torus}
         alt="torus"
-        className={`shape torus lg:w-44 md:w-28 w-10 ${isMounted?'opacity-60':'opacity-0'} duration-300 transition-opacity ease-in delay-0  blur-sm`}
+        className={`shape torus-small lg:w-44 md:w-28 w-24 ${isMounted?'opacity-60':'opacity-0'} duration-300 transition-opacity ease-in delay-0  blur-sm`}
       />
       <img
         src={sphere}
         alt="sphere"
-        className={`shape sphere lg:w-44 md:w-28 w-10 ${isMounted?'opacity-60':'opacity-0'} duration-300 transition-opacity ease-in blur-sm delay-0`}
+        className={`shape sphere lg:w-44 md:w-28 w-24 ${isMounted?'opacity-60':'opacity-0'} duration-300 transition-opacity ease-in blur-sm delay-0`}
       />
       <img
         src={hedron}
         alt="hedron"
-        className={`shape hedron lg:w-44 md:w-28 w-10 ${isMounted?'opacity-60':'opacity-0'} duration-300 transition-opacity ease-in blur-sm delay-0`}
+        className={`shape hedron-small lg:w-44 md:w-28 w-24 ${isMounted?'opacity-60':'opacity-0'} duration-300 transition-opacity ease-in blur-sm delay-0`}
       />
     </div>
   );

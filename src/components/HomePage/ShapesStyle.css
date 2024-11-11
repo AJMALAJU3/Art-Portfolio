@@ -18,24 +18,6 @@
   }
   
   
-  @keyframes roam-torus {
-    0% {
-      transform: translate(83vw, 0vh) rotate(0deg);
-    }
-    25% {
-      transform: translate(80vw, 35vh) rotate(0deg);
-    }
-    50% {
-      transform: translate(60vw, 5vh) rotate(90deg);
-    }
-    75% {
-      transform: translate(65vw, 30vh) rotate(60deg);
-    }
-    100% {
-      transform: translate(75vw, 0vh) rotate(120deg);
-    }
-  }
-  
   @keyframes roam-sphere {
     0% {
       transform: translate(35vw, 70vh) rotate(90deg);
@@ -72,6 +54,24 @@
       transform: translate(65vw, 75vh) rotate(180deg);
     }
   }
+   
+  @keyframes roam-hedron-small {
+    0% {
+      transform: translate(65vw, 45vh) rotate(30deg);
+    }
+    25% {
+      transform: translate(70vw, 65vh) rotate(0deg);
+    }
+    50% {
+      transform: translate(70vw, 50vh) rotate(0deg);
+    }
+    75% {
+      transform: translate(55vw, 67vh) rotate(180deg);
+    }
+    100% {
+      transform: translate(65vw, 65vh) rotate(180deg);
+    }
+  }
   
   
   .shape {
@@ -87,19 +87,63 @@
     animation: roam-cone 30s infinite ease-in-out alternate;
   }
   
-  .torus {
-    animation: roam-torus 30s infinite ease-in-out alternate;
-  }
-  
+
   .sphere {
     animation: roam-sphere 30s infinite ease-in-out alternate;
   }
   
-  .hedron {
-    animation: roam-hedron 30s infinite ease-in-out alternate;
+  .shape.hedron-small {
+    animation: roam-hedron-small 30s infinite ease-in-out alternate;
   }
   
   
   .delay-0 {
     animation-delay: 0s;
   }
+
+
+.shape.torus-small {
+  animation: roam-torus-small 30s infinite ease-in-out alternate;
+}
+@media (min-width: 768px) { 
+  .shape.torus-small {
+    animation: roam-torus 30s infinite ease-in-out alternate;
+  }
+  .shape.hedron-small {
+    animation: roam-hedron 30s infinite ease-in-out alternate;
+  }
+}
+@keyframes roam-torus {
+  0% {
+    transform: translate(83vw, 0vh) rotate(0deg);
+  }
+  25% {
+    transform: translate(80vw, 35vh) rotate(0deg);
+  }
+  50% {
+    transform: translate(60vw, 5vh) rotate(90deg);
+  }
+  75% {
+    transform: translate(65vw, 30vh) rotate(60deg);
+  }
+  100% {
+    transform: translate(75vw, 0vh) rotate(120deg);
+  }
+}
+@keyframes roam-torus-small {
+  0% {
+    transform: translate(60vw, 0vh) rotate(0deg);
+  }
+  25% {
+    transform: translate(65vw, 35vh) rotate(0deg);
+  }
+  50% {
+    transform: translate(50vw, 5vh) rotate(90deg);
+  }
+  75% {
+    transform: translate(55vw, 30vh) rotate(60deg);
+  }
+  100% {
+    transform: translate(65vw, 0vh) rotate(120deg);
+  }
+}

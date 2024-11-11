@@ -1,14 +1,22 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import { FaStar,FaArtstation ,FaPaintBrush,FaPen,FaCircle} from 'react-icons/fa'
 
 function AnimeButton() {
+  const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setIsMounted(false);
+            setIsMounted(true);
+        }, 1500);
+    }, []);
   return (
     <div className='flex justify-center  items-center md:m-4 w-full'>
       <div className='flex justify-around max-w-sm md:w-96 w-72 z-10'>
 
 
-        <div className='px-10 py-2 bg-gradient-to-r from-black text-gray-300 to-pink-500 rounded-full cursor-pointer
-        hover:border-t-4 shadow-custom-top-left  border-[#191919] font-bold  hover:shadow-black duration-500 transition-all relative group'>
+        <div className={`px-10 py-2 bg-gradient-to-r from-black text-gray-300 to-pink-500 rounded-full cursor-pointer ${isMounted ? 'opacity-100 scale-100' : 'opacity-0 w-0 scale-125'}
+        hover:border-t-4 shadow-custom-top-left  border-[#191919] font-bold  hover:shadow-black duration-1000 transition-all ease-in relative group`}>
             Explore
         <FaPen className='absolute text-black bottom-4 group-hover:opacity-100 z-[-1]
          opacity-0 duration-500 transition-all ease-in-out group-hover:bottom-16 group-hover:right-0 right-16 '/>
