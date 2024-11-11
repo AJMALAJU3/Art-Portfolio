@@ -1,0 +1,105 @@
+
+@keyframes roam-cone {
+    0% {
+      transform: translate(0vw, 0vh) rotate(40deg);
+    }
+    25% {
+      transform: translate(35vw, 5vh) rotate(0deg);
+    }
+    50% {
+      transform: translate(15vw, 35vh) rotate(-70deg);
+    }
+    75% {
+      transform: translate(0vw, 7vh) rotate(40deg);
+    }
+    100% {
+      transform: translate(20vw, 8vh) rotate(80deg);
+    }
+  }
+  
+  
+  @keyframes roam-torus {
+    0% {
+      transform: translate(83vw, 0vh) rotate(0deg);
+    }
+    25% {
+      transform: translate(80vw, 35vh) rotate(0deg);
+    }
+    50% {
+      transform: translate(60vw, 5vh) rotate(90deg);
+    }
+    75% {
+      transform: translate(65vw, 30vh) rotate(60deg);
+    }
+    100% {
+      transform: translate(75vw, 0vh) rotate(120deg);
+    }
+  }
+  
+  @keyframes roam-sphere {
+    0% {
+      transform: translate(35vw, 70vh) rotate(90deg);
+    }
+    25% {
+      transform: translate(5vw, 40vh) rotate(180deg);
+    }
+    50% {
+      transform: translate(5vw, 75vh) rotate(90deg);
+    }
+    75% {
+      transform: translate(30vw, 40vh) rotate(45deg);
+    }
+    100% {
+      transform: translate(25vw, 74vh) rotate(180deg);
+    }
+  }
+  
+  
+  @keyframes roam-hedron {
+    0% {
+      transform: translate(65vw, 45vh) rotate(30deg);
+    }
+    25% {
+      transform: translate(85vw, 75vh) rotate(0deg);
+    }
+    50% {
+      transform: translate(85vw, 50vh) rotate(0deg);
+    }
+    75% {
+      transform: translate(55vw, 67vh) rotate(180deg);
+    }
+    100% {
+      transform: translate(65vw, 75vh) rotate(180deg);
+    }
+  }
+  
+  
+  .shape {
+    position: absolute;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 30s;
+  }
+  
+  
+  .cone {
+    animation: roam-cone 30s infinite ease-in-out alternate;
+  }
+  
+  .torus {
+    animation: roam-torus 30s infinite ease-in-out alternate;
+  }
+  
+  .sphere {
+    animation: roam-sphere 30s infinite ease-in-out alternate;
+  }
+  
+  .hedron {
+    animation: roam-hedron 30s infinite ease-in-out alternate;
+  }
+  
+  
+  .delay-0 {
+    animation-delay: 0s;
+  }

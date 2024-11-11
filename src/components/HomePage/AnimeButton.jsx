@@ -8,8 +8,8 @@ function AnimeButton() {
 
 
         <div className='px-10 py-2 bg-gradient-to-r from-black text-gray-300 to-pink-500 rounded-full cursor-pointer
-        hover:border-t-4 shadow-custom-top-left  border-[#191919]  hover:shadow-black duration-500 transition-all relative group'>
-            explore
+        hover:border-t-4 shadow-custom-top-left  border-[#191919] font-bold  hover:shadow-black duration-500 transition-all relative group'>
+            Explore
         <FaPen className='absolute text-black bottom-4 group-hover:opacity-100 z-[-1]
          opacity-0 duration-500 transition-all ease-in-out group-hover:bottom-16 group-hover:right-0 right-16 '/>
          <FaPaintBrush className='absolute text-black bottom-2 group-hover:opacity-100 z-[-1]

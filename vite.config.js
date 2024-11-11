@@ -7,7 +7,7 @@ export default defineConfig({
     rollupOptions: {
       onwarn(warning, warn) {
         if (warning.code === 'UNRESOLVED_IMPORT') return;
-        warn(warning); // Handle all other warnings normally
+        warn(warning); 
       },
     },
   },
