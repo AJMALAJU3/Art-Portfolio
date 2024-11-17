@@ -10,7 +10,6 @@ import Shapes from '../components/HomePage/Shapes'
 function Home() {
     return (
 <>
-    <MenuBar />
     <Wings />
     <div className='h-screen w-full flex flex-col justify-center items-center z-50'>
     <HomeTitle />

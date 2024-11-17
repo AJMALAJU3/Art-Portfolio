@@ -1,15 +1,16 @@
 import React from 'react'
-import MenuBar from '../components/MenuBar'
-import AnimationCard from '../components/Gallery/AnimationCard'
-// import RingAnimation from '../components/Gallery/RingAnimation'
+import TitleCards from '../components/Gallery/TitleCards'
 
 function Gallery() {
   return (
-    <>
-    <MenuBar />
-    <AnimationCard />
-{/* <RingAnimation /> */}
-    </>
+    <div className='flex flex-wrap p-4 justify-center mb-32'>
+      
+    <TitleCards name={'Realestic'}/>
+    <TitleCards name={'Stencil'}/>
+    <TitleCards name={'Colorful'}/>
+    <TitleCards name={'Creative'}/>
+    <TitleCards name={'Craft'}/>
+    </div>
 
   )
 }
