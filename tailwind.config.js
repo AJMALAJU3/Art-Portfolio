@@ -6,14 +6,21 @@ export default {
   ],
   theme: {
     extend: {
+     
+      
       keyframes: {
         slideUp: {
           '0%': { transform: 'translateY(100%)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
       },
       animation: {
         slideUp: 'slideUp 1.0s ease-out forwards',
+        fadeIn: 'fadeIn 1s ease-in-out forwards',
       },
       boxShadow: {
         'custom-top-left': '-1px -5px 10px rgba(0, 0, 0, 0.2)', 
