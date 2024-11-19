@@ -41,7 +41,7 @@ function ImageContainer({ title }) {
     if (currentIndex < allImages.length) {
       const timeout = setTimeout(() => {
         setLoadedImages((prev) => [...prev, allImages[currentIndex]]);
-        setCurrentIndex((prevIndex) => prevIndex + 1);
+        setCurrentIndex((prevIndex) => prevIndex + 1)
       }, 300); 
 
       return () => clearTimeout(timeout);
@@ -53,8 +53,9 @@ function ImageContainer({ title }) {
     return img.naturalWidth > img.naturalHeight ? `col-span-2 md:px-8` : 'col-span-1';
   };
   return (
-    <div className="p-4 absolute top-16 mt-3 md:w-[95%] w-[90%] h-[80%] overflow-y-auto">
-     <div className="grid gap-5 md:grid-cols-4 lg:grid-cols-6 grid-cols-2">
+    <div className="p-4 absolute top-16 mt-3 md:w-[95%] w-[90%] h-[80%] overflow-y-auto"
+    style={{scrollbarWidth:'none'}}>
+     <div className="grid gap-4 md:grid-cols-4 lg:grid-cols-6 grid-cols-2">
         {loadedImages.map((image, index) => (
           <div
             key={index}
