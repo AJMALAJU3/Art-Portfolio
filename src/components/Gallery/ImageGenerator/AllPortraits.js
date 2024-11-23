@@ -7,5 +7,11 @@ import portraitRocky from '../../../assets/portraitRocky.jpg'
 import realesticNikhil from '../../../assets/RealesticNikhil.jpg'
 
 export const portraits = [
-    realesticBaby,realesticNikhil,realesticDq,realesticgirl,Color1,portraitVakri,portraitRocky
+    {img:realesticBaby,link:''},
+    {img:realesticNikhil,link:''},
+    {img:realesticDq,link:''},
+    {img:realesticgirl,link:''},
+    {img:Color1,link:''},
+    {img:portraitVakri,link:''},
+    {img:portraitRocky,link:''},
 ]

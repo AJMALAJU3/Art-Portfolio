@@ -6,7 +6,6 @@ function MenuBar() {
   const list = [
     { name: "Home", icon: <FaHome size={24} /> },
     { name: "Gallery", icon: <FaBox size={24} /> },
-    { name: "Arts", icon: <FaPaintBrush size={24} /> },
     { name: "About", icon: <FaUser size={24} /> },
   ];
   const navigate = useNavigate()
@@ -21,7 +20,7 @@ function MenuBar() {
 
   return (
     <div
-      className={`z-50 fixed w-full max-w-4xl  bg-neutral-900 lg:rounded-xl flex justify-between items-center mx-auto  lg:bottom-2 bottom-0 left-0 right-0 transition-all duration-500 ${
+      className={`z-40 fixed w-full max-w-4xl  bg-neutral-900 lg:rounded-xl flex justify-between items-center mx-auto  lg:bottom-2 bottom-0 left-0 right-0 transition-all duration-500 ${
         isMounted ? `animate-slideUp ${indexSelect === 0 ?'bg-opacity-30':'bg-opacity-100 border-t-4 border-gray-300'} ` : 'opacity-0'
       }`}
     >
@@ -65,8 +64,8 @@ function MenuBar() {
       <div
         className={`absolute bottom-0 transform transition-all duration-300 ease-linear z-10 flex justify-center`}
         style={{
-          left: `${indexSelect * 25}%`,
-          width: '25%',
+          left: `${indexSelect * 33.33}%`,
+          width: '33.33%',
         }}
       >
         <div className={`w-16 h-16 bg-gradient-to-tr from-black to-pink-500 border-4 border-gray-300 rounded-full absolute bottom-8 `}>

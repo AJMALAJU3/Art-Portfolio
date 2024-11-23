@@ -9,5 +9,15 @@ import realesticOrd1 from '../../../assets/realesticOrd1.jpg'
 import realesticHrithwik from '../../../assets/realesticHrithwik.jpg'
 import realesticJ from '../../../assets/realesticJ.jpg'
 export const realestic = [
-    RealesticEye,realesticDq,realesticHrithwik,realesticJ,realesticPearlyFamily,realesticNikhil,realesticBaby,realesticgirl,realesticOrd1,realesticHandEye,
+
+    {img:RealesticEye,link:'C1Tz6XqhiXw'},
+    {img:realesticDq,link:'Cwe7bVABjOn'},
+    {img:realesticHrithwik,link:'Cs8dUbChyAC'},
+    {img:realesticJ,link:'Css_g6xrnjK'},
+    {img:realesticPearlyFamily,link:'Co1TgwqBUDk'},
+    {img:realesticBaby,link:''},
+    {img:realesticNikhil,link:'DB2zWiJB_Em'},
+    {img:realesticgirl,link:''},
+    {img:realesticHandEye,link:'C1Tz6XqhiXw'},
+    {img:realesticOrd1,link:''},
 ];

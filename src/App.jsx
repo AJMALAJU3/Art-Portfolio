@@ -3,6 +3,7 @@ import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
 import Home from './pages/Home'
 import Gallery from "./pages/Gallery";
 import MenuBar from "./components/MenuBar";
+import VideoPlayer from "./components/Gallery/Arts";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>}> </Route>
           <Route path="/gallery" element={<Gallery/>}> </Route>
+          <Route path="/arts" element={<VideoPlayer/>}> </Route>
         </Routes>
       <MenuBar />
       </Router>

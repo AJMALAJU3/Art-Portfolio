@@ -13,7 +13,7 @@ function TitleCards(props) {
                     e.preventDefault()
                     setClicked(props.name)}}
                 className={`
-                    bg-pink-700 bg-opacity-80 bg-cover bg-center rounded-2xl shadow-2xl shadow-gray-800 hover:outline hover:outline-slate-400 hover:-outline-offset-8 m-4 w-full h-56 md:w-80 group `}
+                    bg-pink-700 bg-opacity-80 bg-cover bg-center shadow-2xl shadow-gray-800 hover:outline hover:outline-slate-400 hover:-outline-offset-8 m-4 w-full h-56 md:w-80 group `}
                     style={{backgroundImage: `url(${props.img})`}}>
                 <div
 
@@ -23,7 +23,7 @@ function TitleCards(props) {
                           after:rounded-full after:bottom-16 after:right-24  before:absolute before:blur-xl after:blur-xl
                         before:rounded-full  before:top-24 before:left-24 
                         hover:-rotate-6 flex justify-center h-56 w-full 
-                        rounded-2xl `}>
+                        `}>
 
                             
                     <div className={` ${clicked ?'p-10':''}
