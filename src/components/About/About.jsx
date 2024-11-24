@@ -13,7 +13,8 @@ function About() {
             </div>
             <div class="group-hover:pb-10 transition-all duration-500 delay-200 my-5">
               <h1 class="font-semibold text-gray-700">Ajmal </h1>
-              <p class="text-gray-500 text-sm">@creative_artist</p>
+              <p class="text-gray-400 text-sm">@creative_artist</p>
+              <p className='my-3 text-gray-600'>" Making bad art is better than making no art, life beats down and crushes the soul and art reminds you that you have one. "</p>
             </div>
             
           </div>

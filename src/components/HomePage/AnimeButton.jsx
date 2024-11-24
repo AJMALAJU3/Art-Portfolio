@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { FaStar, FaArtstation, FaPaintBrush, FaPen, FaCircle } from "react-icons/fa";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate } from "react-router-dom"; 
 
 function AnimeButton() {
   const [isMounted, setIsMounted] = useState(false);
-  const navigate = useNavigate(); // Initialize the navigation hook
+  const navigate = useNavigate(); 
 
   useEffect(() => {
     setTimeout(() => {
@@ -13,9 +13,9 @@ function AnimeButton() {
     }, 1500);
   }, []);
 
-  // Handle button click
+
   const handleExploreClick = () => {
-    navigate("/gallery"); // Navigate to the /gallery route
+    navigate("/gallery"); 
   };
 
   return (
