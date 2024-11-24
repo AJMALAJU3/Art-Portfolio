@@ -4,7 +4,7 @@ import VideoPlayer from './Arts';
 function ImagePreview({setIsZoom,videoLink,zoomedImage}) {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50 ">
-          <div className="relative bg-neutral-200 p-6  shadow-lg max-w-4xl w-full flex flex-col md:flex-row gap-5 overflow-y-auto h-screen">
+          <div className="relative bg-neutral-200 p-6  shadow-lg max-w-4xl w-full flex flex-col md:flex-row gap-5 overflow-y-auto h-screen items-center">
             <div className="w-full md:w-1/2 mt-4 md:mt-0 md:ml-4 ">
               <VideoPlayer link={videoLink} />
             </div>

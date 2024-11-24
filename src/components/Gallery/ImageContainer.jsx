@@ -18,6 +18,7 @@ function ImageContainer({ title }) {
 
 
   useEffect(() => {
+    console.log(title)
     switch (title) {
       case 'realestic':
         setAllImages(realestic);
@@ -33,6 +34,9 @@ function ImageContainer({ title }) {
         break;
       case 'craft':
         setAllImages(craft);
+        break;
+      case 'all portraits':
+        setAllImages(portraits)
         break;
 
       default:
