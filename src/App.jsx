@@ -1,28 +1,25 @@
-import { useState} from "react";
-import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
-import Home from './pages/Home'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from './pages/Home';
 import Gallery from "./pages/Gallery";
+import About from "./pages/About"; // Assuming this exists
 import MenuBar from "./components/MenuBar";
-import VideoPlayer from "./components/Gallery/Arts";
 
 function App() {
-
-
-
   return (
-    <div className="w-full h-screen  bg-neutral-300 overflow-y-auto relative"
-    style={{scrollbarWidth:'none'}}>
+    <div
+      className="w-full h-screen bg-neutral-300 overflow-y-auto relative"
+      style={{ scrollbarWidth: 'none' }}
+    >
       <Router>
         <Routes>
-          <Route path="/" element={<Home/>}> </Route>
-          <Route path="/gallery" element={<Gallery/>}> </Route>
-          <Route path="/arts" element={<VideoPlayer/>}> </Route>
+          <Route path="/" element={<Home />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/about" element={<About />} />
         </Routes>
-      <MenuBar />
+        <MenuBar />
       </Router>
     </div>
-    
-  )
+  );
 }
 
-export default App
+export default App;

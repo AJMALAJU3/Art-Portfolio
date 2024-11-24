@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import VideoPlayer from './Arts';
+import ImagePreview from './ImagePreview';
 
 import { realestic } from './ImageGenerator/Realestic';
 import { stencil } from './ImageGenerator/Stencil';
@@ -15,6 +15,7 @@ function ImageContainer({ title }) {
   const [isZoom, setIsZoom] = useState(false);
   const [zoomedImage, setZoomedImage] = useState(null);
   const [videoLink, setVideoLink] = useState('');
+
 
   useEffect(() => {
     switch (title) {
@@ -89,35 +90,7 @@ function ImageContainer({ title }) {
           </div>
         ))}
       </div>
-
-      {/* Zoomed Image and Instagram Video */}
-      {isZoom && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50 ">
-          <div className="relative bg-white p-6  shadow-lg max-w-4xl w-full flex flex-col md:flex-row gap-5 overflow-y-auto h-screen">
-            {/* Zoomed Image */}
-
-            {/* Instagram Video */}
-            <div className="w-full md:w-1/2 mt-4 md:mt-0 md:ml-4">
-              <VideoPlayer link={videoLink} />
-            </div>
-
-            <div className="w-full md:w-1/2 flex justify-center items-center">
-              <img
-                src={zoomedImage}
-                alt="Zoomed"
-                className="max-w-full max-h-[80vh] object-contain rounded-lg"
-              />
-            </div>
-            {/* Close Button */}
-            <button
-              className="absolute top-2 right-2 text-white bg-pink-600 hover:bg-pink-700 bg-opacity-80 rounded-full p-2"
-              onClick={() => setIsZoom(false)}
-            >
-              ✕
-            </button>
-          </div>
-        </div>
-      )}
+      {isZoom && <ImagePreview setIsZoom={setIsZoom} zoomedImage={zoomedImage} videoLink={videoLink} />}
     </div>
   );
 }
