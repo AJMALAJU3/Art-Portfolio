@@ -20,7 +20,7 @@ function HomeTitle() {
                             className={`bg-gradient-to-tr from-black to-pink-700 text-transparent bg-clip-text 
                             hover:from-pink-700 hover:to-black 
                             transition-all duration-500 ease-in-out`}
-                            style={{transitionDelay: `${index * 100}ms`}} // Slight delay between each word for smoother flow
+                            style={{transitionDelay: `${index * 100}ms`}}
                         >
                             {text}{' '}
                         </span>

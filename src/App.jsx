@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
 import Gallery from "./pages/Gallery";
-import About from "./pages/About"; // Assuming this exists
+import About from "./pages/About"; 
 import MenuBar from "./components/MenuBar";
 
 function App() {

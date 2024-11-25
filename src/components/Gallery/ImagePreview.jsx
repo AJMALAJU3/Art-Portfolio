@@ -18,7 +18,7 @@ function ImagePreview({setIsZoom,videoLink,zoomedImage}) {
             </div>
 
             <button
-              className="absolute top-2 right-2 text-white bg-pink-600 hover:bg-pink-700 bg-opacity-80 rounded-full p-2"
+              className="fixed lg:absolute top-2 right-2 text-white bg-pink-600 hover:bg-pink-700 bg-opacity-80 rounded-full p-2"
               onClick={() => setIsZoom(false)}
             >
               ✕

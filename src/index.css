@@ -14,30 +14,3 @@ body {
     transform: translateY(0);
   }
 }
-
-/* 
-.perspective {
-  perspective: 1000px;
-}
-
-.carousel-container {
-  position: relative;
-  width: 400px;
-  height: 400px;
-  transform-style: preserve-3d;
-  transform: rotateY(0deg);
-  animation: rotate 10s infinite linear;
-}
-
-.carousel-item {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  display: flex;
-justify-content: center;
-align-items: center;
-  background-color: #3b82f6; 
-  color: white;
-  border-radius: 10px;
-  font-size: 1.25rem;
-} */
